@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入需要改变颜色的字符..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bRZ-rS-0nU">
+                                <color key="backgroundColor" white="0.79712949820000001" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="ibm-U6-Oqs"/>
+                                    <constraint firstAttribute="height" constant="30" id="oOj-Ki-EIx"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="显示结果" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8e-kK-Pw1">
+                                <color key="backgroundColor" white="0.79712949820000001" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="LQA-Z8-0pa"/>
+                                    <constraint firstAttribute="height" constant="30" id="hrZ-xQ-2cv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4D1-mw-Md6">
+                                <color key="backgroundColor" white="0.79712949820000001" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="KdA-CH-oRQ"/>
+                                    <constraint firstAttribute="height" constant="30" id="iwm-HL-UC2"/>
+                                </constraints>
+                                <state key="normal" title="清除">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fDL-uN-c1w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Nq-es-Ypm">
+                                <color key="backgroundColor" white="0.79712949820000001" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="arh-fl-6TQ"/>
+                                    <constraint firstAttribute="height" constant="30" id="gUZ-eq-DUU"/>
+                                </constraints>
+                                <state key="normal" title="改变">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l1n-65-YM7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.17092958570483363" green="0.72404593173155907" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="c8e-kK-Pw1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="81W-KT-5zY"/>
+                            <constraint firstItem="4D1-mw-Md6" firstAttribute="top" secondItem="c8e-kK-Pw1" secondAttribute="bottom" constant="48" id="AUf-9A-Bbc"/>
+                            <constraint firstItem="bRZ-rS-0nU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KgE-en-Qm4"/>
+                            <constraint firstItem="4D1-mw-Md6" firstAttribute="leading" secondItem="c8e-kK-Pw1" secondAttribute="leading" id="SCz-pl-rOj"/>
+                            <constraint firstItem="8Nq-es-Ypm" firstAttribute="trailing" secondItem="c8e-kK-Pw1" secondAttribute="trailing" id="bhJ-LJ-xF7"/>
+                            <constraint firstItem="bRZ-rS-0nU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="cdN-eh-zSY"/>
+                            <constraint firstItem="8Nq-es-Ypm" firstAttribute="top" secondItem="c8e-kK-Pw1" secondAttribute="bottom" constant="48" id="kM4-oF-t6y"/>
+                            <constraint firstItem="c8e-kK-Pw1" firstAttribute="top" secondItem="bRZ-rS-0nU" secondAttribute="bottom" constant="49" id="rXl-5G-ktT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputField" destination="bRZ-rS-0nU" id="aQb-kk-3KG"/>
+                        <outlet property="showField" destination="c8e-kK-Pw1" id="TUz-Ug-GL8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="-132"/>
+        </scene>
+    </scenes>
+</document>
